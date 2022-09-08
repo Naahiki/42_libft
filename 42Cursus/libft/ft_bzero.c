@@ -1,35 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/11 17:40:55 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/08/31 13:44:44 by nrodrigu         ###   ########.fr       */
+/*   Created: 2022/09/06 17:28:44 by nrodrigu          #+#    #+#             */
+/*   Updated: 2022/09/06 18:01:24 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowercase(char *str)
+/*Pone a 0 los primeros n bytes del area de bytes  que comienza en s*/
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
 {
-	int	i;
-
-	i = 0;
-	if (*str == '\0')
-	{
-		return (1);
-	}
-	else
-	{
-		while (str[i])
-		{
-			if (str[i] < 97 || str[i] > 122)
-				return (0);
-			i++;
-		}
-	}
-	return (1);
+	ft_memset(s, 0, n);
 }
-
-hola
-

@@ -1,35 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/11 17:40:55 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/08/31 13:44:44 by nrodrigu         ###   ########.fr       */
+/*   Created: 2022/08/31 13:16:42 by nrodrigu          #+#    #+#             */
+/*   Updated: 2022/09/06 15:53:06 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowercase(char *str)
+int	ft_isalpha(int c)
 {
-	int	i;
-
-	i = 0;
-	if (*str == '\0')
-	{
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
-	}
-	else
-	{
-		while (str[i])
-		{
-			if (str[i] < 97 || str[i] > 122)
-				return (0);
-			i++;
-		}
-	}
-	return (1);
+	return (0);
 }
-
-hola
-

@@ -1,35 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/11 17:40:55 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/08/31 13:44:44 by nrodrigu         ###   ########.fr       */
+/*   Created: 2022/09/06 17:09:50 by nrodrigu          #+#    #+#             */
+/*   Updated: 2022/09/08 17:46:19 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowercase(char *str)
+/* Rellena los primeros n bytes del area de memoria apuntada por s con el byte 
+constante c*/
+#include "libft.h"
+
+void	*ft_memset(void	*s, int c, size_t n)
 {
-	int	i;
+	unsigned char	*aux;
+	size_t			i;
 
 	i = 0;
-	if (*str == '\0')
-	{
-		return (1);
-	}
-	else
-	{
-		while (str[i])
-		{
-			if (str[i] < 97 || str[i] > 122)
-				return (0);
+	aux = (unsigned char *)s;
+	while (i < n)
+	{	
+		aux[i] = (unsigned char) c;
 			i++;
-		}
 	}
-	return (1);
+	return ((void *) aux);
 }
-
-hola
-
