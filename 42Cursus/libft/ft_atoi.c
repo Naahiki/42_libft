@@ -6,11 +6,11 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 16:29:48 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/08 17:46:46 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/13 18:31:42 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;
@@ -39,7 +39,7 @@ int	ft_atoi(char *str)
 /*#include <stdio.h>
 int		main(void)
 {
-	printf("%d\n", ft_atoi("                               -7"));
+	printf("%d\n", ft_atoi("                              -76"));
 	printf("%d\n", ft_atoi("---55"));
 	printf("%d\n", ft_atoi(" -+-+-586557"));
 	printf("%d\n", ft_atoi(" -1234ab567"));
