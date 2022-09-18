@@ -1,34 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/11 17:55:52 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/07/13 13:48:58 by nrodrigu         ###   ########.fr       */
+/*   Created: 2022/09/15 18:03:09 by nrodrigu          #+#    #+#             */
+/*   Updated: 2022/09/16 18:21:52 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_uppercase(char *str)
-{
-	int	i;
+ * indice de cada caracter de s y el propio caracter.Genera una nueva string 
+ * con el resultado del uso sucesivo de f*/
+/* Valor devuelto: La string creada tras el correcto uso de 'f' sobre cada
+ * caracter, NULL si falla la reserva de memoria (malloc)*/
 
-	i = 0;
-	if (*str == '\0')
-	{
-		return (1);
-	}
-	else
-	{
-		while (str[i] != '\0')
-		{
-			if (str[i] < 65 || str[i] > 90)
-			{
-				return (0);
-			}
-			i++;
-		}
-	}
-	return (1);
+#include "libft.h"
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+	
 }

@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:41:02 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/14 18:17:40 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/18 12:40:11 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * mentando un contador mientras iteramos primero a traves de los 1, luego 
  * dividir por 10 e iterar a traves de los de hamarreko, entonces dividir por 10
  * e iterar a traves de los ehuneko etc.. hasta el final el numero pasado*/
-/*2)Usamos mallos para crear un espacio de memria ara nuestro caracter y 
+/*2)Usamos malloc para crear un espacio de memria ara nuestro caracter y 
 añadims +1 para tener en cuenta el final el byte que tenemos que añair.*/
 /*3) Añadimos un salvaguarda si nuestro malloc falla para que si falla devuelve 
  * NULL. funcion de seguridad*/

@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/05 17:42:13 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/07/07 23:29:27 by nrodrigu         ###   ########.fr       */
+/*   Created: 2022/09/16 18:25:17 by nrodrigu          #+#    #+#             */
+/*   Updated: 2022/09/16 18:49:05 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*A cada caracter  de la string 's',aplica la función 'f' dando como parametros el indice de cada caracter dentro de 's' y la direccion del propio caracter, que podrá modificarse si es necesario.*/
+/* Valor devuelto --> NADA.*/
 
-void	ft_ultimate_div_mod(int *a, int *b)
+#include "libft.h"
+
+void	ft_striteri(char *s, void(*f)(unsigned int, char*))
+
 {
-	int	z;
-
-	z = *a / *b;
-	*b = *a % *b;
-	*a = z;
 }
