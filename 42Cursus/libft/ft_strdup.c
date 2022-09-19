@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 17:24:31 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/13 18:13:04 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:52:02 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,21 +26,6 @@
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
-{
-	size_t	i;
-
-	if (!dest && !src)
-		return (0);
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
-		i++;
-	}
-	return (dest);
-}
-
 char	*ft_strdup(const char *s1)
 {
 	char	*new;
@@ -49,16 +34,6 @@ char	*ft_strdup(const char *s1)
 	if (new == NULL)
 		return (NULL);
 	return ((char *) ft_memcpy(new, s1, ft_strlen(s1) + 1));
-}
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != 0)
-		i++;
-	return (i);
 }
 
 /*char	*ft_strdup(const char *s1)

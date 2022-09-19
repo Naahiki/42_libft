@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:15:28 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/19 11:30:18 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:50:04 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,6 @@
  * La string resultante se devuelve con una reserva de malloc(3)*/
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
 
 static int	ft_checkset(char c, char const *set)
 {

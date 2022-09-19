@@ -6,18 +6,13 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 12:09:18 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/19 12:13:38 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:49:16 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*Esta funcion envia el numero n al fd dado*/
 
 #include "libft.h"
-
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
 
 void	ft_putnbr_fd(int n, int fd)
 {

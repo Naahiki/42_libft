@@ -1,34 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: nrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/18 14:18:07 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/19 12:49:22 by nrodrigu         ###   ########.fr       */
+/*   Created: 2022/09/19 12:17:15 by nrodrigu          #+#    #+#             */
+/*   Updated: 2022/09/19 12:56:21 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Esta funcion envia la string s al fd especificado*/
+/* Reserva (utilizando malloc(3)) un array de strings resultante de separar la
+ *  string s en substrings utilizando el caracter c como delimitador.
+ *   El array debe terminar con un puntero NULL.*/
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
-{
-	while (*s)
-	{
-		ft_putchar_fd(*s, fd);
-		s++;
-	}
-}
 
-/*int	main(void)
-{
-	char	*c;
-	int		fd;
-	
-	c = "NahikiWinki";
-	fd = 1;
-	ft_putstr_fd(c, fd);
-}*/

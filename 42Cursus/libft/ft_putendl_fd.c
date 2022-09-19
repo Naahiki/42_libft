@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 12:03:49 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/19 12:08:22 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:51:40 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,6 @@
  * salto de linea*/
 
 #include "libft.h"
-
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
 
 void	ft_putendl_fd(char *s, int fd)
 {

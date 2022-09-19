@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 18:03:09 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/18 13:42:46 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:49:52 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,6 @@ resultado de la funcion*/
  * caracter, NULL si falla la reserva de memoria (malloc)*/
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
 
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 {

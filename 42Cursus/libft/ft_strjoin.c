@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 19:31:06 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/13 19:37:19 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:49:42 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,6 @@
 // La funcion suma los 2 strings, s1 + s2 y da como resultado el mio str1//
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != 0)
-		i++;
-	return (i);
-}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

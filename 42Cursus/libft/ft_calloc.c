@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 17:11:24 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/13 17:42:08 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:54:53 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,26 +20,11 @@
 // Estructura necesaria de malloc... si el destino esta vacio --> NULL //
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
-{
-	unsigned char	*aux;
-	size_t			i;
-
-	i = 0;
-	aux = (unsigned char *) s;
-	while (i < n)
-	{
-		aux[i] = (unsigned char)c;
-		i++;
-	}
-	return ((void *)aux);
-}
-
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*dest;
 
-	dest = malloc(sizeof(size) * count);
+	dest = malloc(size * count);
 	if (!dest)
 	{
 		return (NULL);

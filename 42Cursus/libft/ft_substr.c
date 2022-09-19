@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:28:42 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/14 17:14:02 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:50:20 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,34 +27,6 @@ lo que  quiero que me devuelva (len)*/
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != 0)
-		i++;
-	return (i);
-}
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
-{
-	size_t	i;
-	size_t	j;
-
-	i = 0;
-	j = ft_strlen((char *)src);
-	if (size != 0)
-	{
-		while (src[i] && i < size -1)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	return (j);
-}
 /*VERSION ACORTADA, utilizando strlen y strlcpy*/
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
