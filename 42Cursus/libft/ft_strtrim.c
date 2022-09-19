@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:15:28 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/18 14:10:05 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 11:30:18 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,12 +73,10 @@ char	*ft_strtrim(char const *s1, char const *set)
    size_t  j;
    char    *strtrim;
 
-   set = "l ";
-   i = ft_sizefront(s1, set);
-   j = ft_sizeend(s1, set);
+   set = "m ";
    printf("Valor Start: %zu\n", i);
    printf("Valor End: %zu\n", j);
    strtrim = ft_strtrim(s1, set);
    printf("%s\n", strtrim);
-}*/
-
+}
+*/

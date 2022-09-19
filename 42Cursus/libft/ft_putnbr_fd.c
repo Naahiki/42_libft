@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/18 14:18:07 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/19 12:01:02 by nrodrigu         ###   ########.fr       */
+/*   Created: 2022/09/19 12:09:18 by nrodrigu          #+#    #+#             */
+/*   Updated: 2022/09/19 12:13:38 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Esta funcion envia la string s al fd especificado*/
+/*Esta funcion envia el numero n al fd dado*/
 
 #include "libft.h"
 
@@ -19,21 +19,32 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	while (*s)
+	if (n == -2147483648)
 	{
-		ft_putchar_fd(*s, fd);
-		s++;
+		write(fd, "-2147483648", 11);
+		return ;
+	}
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n = -n;
+	}
+	if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+	{
+		ft_putchar_fd(48 + n, fd);
 	}
 }
 
-/*int	main(void)
+/*int main(void)
 {
-	char	*c;
-	int		fd;
-	
-	c = "NahikiWinki";
-	fd = 1;
-	ft_putstr_fd(c, fd);
+int     nmb = 666666;
+ft_putnbr_fd(nmb, 1);
+return (0);
 }*/

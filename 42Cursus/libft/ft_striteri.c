@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 18:25:17 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/18 13:44:26 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:01:49 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,4 @@ int	main(void)
 	ft_striteri(str, funcion);
 	printf("el resultado es: %s\n", str);
 	return (0);
-}
-*/
+}*/
