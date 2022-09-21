@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 12:17:15 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/21 18:32:49 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 19:01:59 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,13 @@ char	**ft_split(char const *s, char c)
 	char			**str;
 	unsigned int	i;
 	unsigned int	start;
-	unsigned int	a;
+	unsigned int	j;
 
 	str = (char **)malloc(sizeof(char *) * (ft_checkjumps(s, c) + 1));
 	if (!str)
 		return (NULL);
 	i = 0;
-	a = 0;
+	j = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] != c)
@@ -62,13 +62,13 @@ char	**ft_split(char const *s, char c)
 			start = i;
 			while (s[i] != '\0' && s[i] != c)
 				i++;
-			str[a] = ft_substr(s, start, i - start);
-			a++;
+			str[j] = ft_substr(s, start, i - start);
+			j++;
 			continue ;
 		}
 		i++;
 	}
-	str[a] = NULL;
+	str[j] = NULL;
 	return (str);
 }
 
