@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 16:12:45 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/08 17:20:33 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:47:36 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,12 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-/*int	main(void)
+/*int main(void)
 {
-	int	c;
-	const char str[] ="Nahikiwinki";
-	char *solution;	
-	c = 'i';	
-	solution = ft_strchr(str,c);	
-	printf("ft_strchr funcion : %s\n", solution);	
-	solution = strchr(str, c);	
-	printf("strchr funcion: %s\n", solution);	
-	return (0);	
-}	*/
+	const char s[] = "hola que tal";
+	int c;
+	c = '\0';
+	printf("%s \n", ft_strchr(s, c));
+	printf("%s", strchr(s, c));
+	return (0);
+}*/

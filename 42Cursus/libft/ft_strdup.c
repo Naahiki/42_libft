@@ -6,10 +6,19 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 17:24:31 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/19 12:52:02 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 17:52:14 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* ******************************* DEFINICION ******************************* */
+
+/* La función strdup asigna suficiente memoria para una copia de la cadena
+s1, realiza la copia y devuelve un puntero a la misma.  El puntero puede
+utilizarse posteriormente como argumento para la función free(3).
+Si no hay suficiente memoria disponible, se devuelve NULL y errno se pone a
+ENOMEM. */
+
+/* ************************************************************************** */
 //Asigna memoria suficiente para una copia de la cadena s1, hace la copia y le
 //devuelve un puntero.El puntero se puede utilizar posteriormente como argument 
 // de la funcion free(3)//
@@ -28,37 +37,26 @@
 
 char	*ft_strdup(const char *s1)
 {
-	char	*new;
+	unsigned int	i;
+	char			*cpy;
 
-	new = malloc(ft_strlen(s1) + 1);
-	if (new == NULL)
-		return (NULL);
-	return ((char *) ft_memcpy(new, s1, ft_strlen(s1) + 1));
+	cpy = malloc((ft_strlen(s1) + 1) * sizeof(char));
+	if (!cpy)
+		return (0);
+	i = 0;
+	while (s1[i] != '\0')
+	{
+		cpy[i] = s1[i];
+		i++;
+	}
+	cpy[i] = '\0';
+	return (cpy);
+	free(cpy);
 }
 
-/*char	*ft_strdup(const char *s1)
+/* int main(void)
 {
-	int		cont;
-	char	s1_new;
-	int		size;
-
-	size = ft_strlen(s1);
-	s1_new = malloc (sizeof(char) * size +1);
-	if (!s1_new)
-		return (NULL);
-	cont = 0;
-	while (s1[cont] != '\0')
-	{
-		s1_new[cont] = s1 [cont];
-		cont++;
-	}
-	s1_new[cont] = s1[cont];
-	return (s1_new);
-}*/
-
-/*int	main(void)
-{
-	printf("%s\n", ft_strdup("Hola Nahikii"));
-	printf("%s\n", strdup("Hola Nahikii"));
+	const char s1[] = "hola";
+	printf("%s", ft_strdup(s1));
 	return (0);
-}*/
+} */

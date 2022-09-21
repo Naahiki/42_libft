@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 12:17:15 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/20 18:20:46 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:32:49 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,66 @@
 
 #include "libft.h"
 
+static int	ft_checkjumps(char const *s, char c)
+{
+	unsigned int	i;
+	unsigned int	jumps;
+
+	jumps = 0;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] != c)
+		{
+			while (s[i] != '\0' && s[i] != c)
+				i++;
+			jumps++;
+			continue ;
+		}
+		i++;
+	}
+	return (jumps);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	
+	char			**str;
+	unsigned int	i;
+	unsigned int	start;
+	unsigned int	a;
+
+	str = (char **)malloc(sizeof(char *) * (ft_checkjumps(s, c) + 1));
+	if (!str)
+		return (NULL);
+	i = 0;
+	a = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] != c)
+		{
+			start = i;
+			while (s[i] != '\0' && s[i] != c)
+				i++;
+			str[a] = ft_substr(s, start, i - start);
+			a++;
+			continue ;
+		}
+		i++;
+	}
+	str[a] = NULL;
+	return (str);
 }
+
+/*int main(void)
+{
+	char const s[] = "  hola  que pasa";
+	char c;
+	char **result;
+	c = 'a';
+	result = ft_split(s, c);
+	int check = -1;
+	while (result[++check])
+		printf("line [%d] -> %s\n", check, result[check]);
+	//printf("%s", ft_split(s, c));
+	return (0);
+} */

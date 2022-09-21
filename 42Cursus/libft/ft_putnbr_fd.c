@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 12:09:18 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/19 12:49:16 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:47:11 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,3 +43,13 @@ int     nmb = 666666;
 ft_putnbr_fd(nmb, 1);
 return (0);
 }*/
+
+/* int main(void)
+{
+	int n;
+	int fd;
+	n = 5646;
+	fd = 1;
+	ft_putnbr_fd(n, fd);
+	return (0);
+} */

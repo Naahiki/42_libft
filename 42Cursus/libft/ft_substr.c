@@ -6,8 +6,15 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:28:42 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/19 12:50:20 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 17:50:34 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
+/* ************************************************************************** */
+
+/* ******************************* DEFINICIÓN ******************************* */
+
+/* Reserva (con malloc(3)) y devuelve una substring de la string ’s’. La
+substring empieza desde el índice ’start’ y tiene una longitud máxima ’len’. */
+
 /* ************************************************************************** */
 
 /* Coje n (len) caracteres de un string (s) desde donde le indiques (start)*/

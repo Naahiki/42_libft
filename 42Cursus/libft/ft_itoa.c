@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:41:02 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/18 12:40:11 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:45:02 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,4 +101,15 @@ char	*ft_itoa(int n)
    }
    free(output);
    return (0);
+} */
+
+/* int main(void)
+{
+	int n;
+	char *string;
+	n = 0144;
+	string = ft_itoa(n);
+	printf("mi función = %s", string);
+	free(string);
+	return (0);
 } */

@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 17:11:24 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/19 12:54:53 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:44:16 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,10 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_memset (dest, 0, size * count);
 	return (dest);
 }
+/* int main(void)
+{
+	char s[] = "hola";
+	printf("original : %s\n", ft_calloc(5, 4));
+	free(s);
+	return (0);
+} */

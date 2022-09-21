@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 13:17:57 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/06 15:54:22 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:44:38 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,11 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+/*int	main(void)
+{
+	int	c; 
+	c = '\n';
+	printf("%d", ft_isprint (c));
+	return (0);
+}*/

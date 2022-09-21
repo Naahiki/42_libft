@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 12:30:00 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/10 12:47:35 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:46:22 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,3 +62,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+
+/* int main(void)
+{
+	char dst [] = "hola que tal";
+	char src[] = "lorem ipsum dolor sit amet";
+	printf("%s\n", ft_memmove(dst, src, 4));
+	printf("%s\n", memmove(dst, src, 4));
+	return (0);
+} */

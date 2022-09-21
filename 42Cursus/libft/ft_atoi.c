@@ -6,9 +6,11 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 16:29:48 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/16 18:48:55 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:41:50 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* La función atoi convierte un char en un int */
 
 int	ft_atoi(const char *str)
 {

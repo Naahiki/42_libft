@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 15:41:48 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/08 17:46:04 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:49:21 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,15 +39,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (j);
 }
 
-/* int	main(void)
-	{			
-	const char source[] = "AndrEider";			
-	char destiny[] = "";	
-	size_t destinysize;			
-	destinysize = 1;			
-	printf("Número de carácteres del string 1: %lu\n", 
-	ft_strlcpy(destiny, source, destinysize));			
-	printf("Destiny = string 2: %s\n", destiny);			
-	return (0);			
-	}
-	*/// mejor poner char destiny[100]; sino, if destinysize > 1 dará error
+/* int main (void)
+{
+	const char src[] = "hola";
+	char dst[8];
+	printf ("dst = %zu y count = %s", ft_strlcpy(dst, src, 3), dst);
+	return (0);
+} */

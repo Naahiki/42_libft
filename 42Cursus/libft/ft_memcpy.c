@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 17:44:17 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/08 17:46:30 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:54:49 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,10 @@ int main(void)
 	printf("%s", ft_memcpy(dest, src, 2));
 	return (0);
 }*/
+/* int main(void)
+{
+	char dst[] = "";
+	char src[] = "";
+	printf("%s", ft_memcpy(dst, src, 4));
+	return (0);
+} */

@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 17:09:50 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/08 17:46:19 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:46:34 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,11 @@ void	*ft_memset(void	*s, int c, size_t n)
 	}
 	return ((void *) aux);
 }
+
+/* int main(void)
+{
+	char b[] = "hola m";
+	ft_memset(b, 0, 4);
+	return (0);
+}
+ */

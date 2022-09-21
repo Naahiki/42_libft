@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 16:54:20 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/08 17:45:49 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:49:08 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (dest + orig);
 }
 
-/* #include <stdio.h>
-int main (void)
-{			
-	const char source[] = "AndrEider";			
-	char destiny[] = "robot";			
-	size_t destinysize;			
-	destinysize = 15;			
-	printf("Número de carácteres del string 1: %lu\n", 
-	ft_strlcat(destiny, source, destinysize));			
-	printf("Destiny = string 2: %s\n", destiny);			
-	return (0);			
-
+/*int main(void)
+{
+	char dst[7] = "a";
+	char dst2[7] = "a";
+	char src[] = "lorem ipsum dolor sit amet";
+	printf("len= %zu y dst= %s\n", ft_strlcat(dst, src, 0), dst);
+	printf("len= %zu y dst= %s\n", strlcat(dst2, src, 0), dst2);
+	return (0);
 }*/
