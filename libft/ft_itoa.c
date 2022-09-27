@@ -6,7 +6,7 @@
 /*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:41:02 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/21 18:45:02 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/09/26 11:46:13 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ añadims +1 para tener en cuenta el final el byte que tenemos que añair.*/
 /*6)Empezamos desde el primer indice de nuestra cadena de caracteres.*/
 /*7)Anotamos un signo si el numero dado es menor que 0*/
 /*8)Pasamos por un bucle y convertimos primero los unos en char, invirtiendo el
- * algoritmo aoi y repitiendo luego los hamarreko,ehuneko...*/
+ * algoritmo at     oi y repitiendo luego los hamarreko,ehuneko...*/
 /*9)Devolvemos nuestra cadena de caracteres completamente convertida.*/
 /* static --> Las variables estáticas tienen la propiedad de conservar 
  * su valor incluso después de salir de su ámbito. Por lo tanto, 
@@ -101,9 +101,9 @@ char	*ft_itoa(int n)
    }
    free(output);
    return (0);
-} */
+} 
 
-/* int main(void)
+ int main(void)
 {
 	int n;
 	char *string;
